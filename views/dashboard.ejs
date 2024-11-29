@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Checklist Results</title>
+  </head>
+  <body>
+    <h1>Checklist Results</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rule</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach(result => { %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.status %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>
